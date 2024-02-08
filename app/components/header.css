@@ -1,0 +1,11 @@
+/* Customizações do header */
+
+#header .menu-link {
+  padding-bottom: 10px;
+}
+
+#header .menu-link:hover,
+#header .menu-link.active {
+  border-bottom: 1px solid red;
+  transition-duration: .5s;
+}

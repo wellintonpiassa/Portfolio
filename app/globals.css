@@ -5,3 +5,8 @@
 :root {
   
 }
+
+body {
+  background-image: url('../public/assets/bkg-gray.jpg');
+  background-repeat: repeat-x;
+}
