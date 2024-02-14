@@ -1,13 +1,12 @@
-import Intro from "./components/Intro/Intro";
-import About from "./components/about/About";
-import Contact from "./components/contact/Contact";
+import Intro from "./pages/Intro/Intro";
+import About from "./pages/about/About";
+import Contact from "./pages/contact/Contact";
 import Header from "./components/header/Header";
-import Projects from "./components/projects/Projects";
-import Skills from "./components/skills/Skills";
+import Projects from "./pages/projects/Projects";
+import Skills from "./pages/skills/Skills";
 
 export default function Home() {
   return (
-    
     <main className="mx-auto">
       <Header></Header>
       <Intro></Intro>
