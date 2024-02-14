@@ -31,6 +31,8 @@ section {
   min-height: 100vh;
   width: 90%;
   margin: auto;
+  padding-bottom: 8%;
+  position: relative;
 }
 
 ::-webkit-scrollbar {
