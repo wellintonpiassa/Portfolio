@@ -1,13 +1,14 @@
 import './arrow.css'
-import FadeIn from 'react-fade-in';
+import { Fade } from "react-awesome-reveal"
 import Image from 'next/image';
 
-export default function Arrow(props:any) {
+export default function Arrow({direction="down", delay=1000, link=""}:any) {
   return (
-    <FadeIn 
-      delay={4000}
-      className={`arrow ${props.direction}`} >
-        <a href="#about">
+    <Fade 
+      delay={delay}
+      triggerOnce={true}
+      childClassName={`arrow ${direction}`} >
+        <a href={link}>
           <Image
             src="/icons/arrow.svg"
             width={30}
@@ -15,6 +16,6 @@ export default function Arrow(props:any) {
             alt="Seta para baixo"
           />
         </a>
-    </FadeIn>
+    </Fade>
   )
 }
