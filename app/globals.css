@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  
+  --baseColor: #444444;
 }
 
 body {

@@ -6,6 +6,6 @@
 
 #header .menu-link:hover,
 #header .menu-link.active {
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid var(--baseColor);
   transition-duration: .5s;
 }
