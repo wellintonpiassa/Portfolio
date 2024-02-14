@@ -1,9 +1,9 @@
 'use client'
 import './intro.css'
 import Typewriter from 'typewriter-effect';
-import FadeIn from 'react-fade-in';
 import Image from 'next/image';
 import Arrow from '@/app/components/arrow/Arrow';
+import { Fade } from 'react-awesome-reveal';
 
 export default function Intro() {  
   return (
@@ -46,7 +46,8 @@ export default function Intro() {
             }}
           />
         </div>
-        <FadeIn 
+        <Fade 
+          triggerOnce={true}
           delay={3500}>
           <ul className='flex gap-4 social-media'>
             <li>
@@ -80,8 +81,8 @@ export default function Intro() {
               </a>
             </li>
           </ul>
-        </FadeIn>
-        <Arrow direction="down"></Arrow>
+        </Fade>
+        <Arrow delay={4000} link={'#about'}/>
       </div>
     </section>
   )
