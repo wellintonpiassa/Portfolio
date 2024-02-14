@@ -13,6 +13,7 @@
 html {
   scroll-behavior: smooth;
   overflow-y: scroll;
+  overflow-x: hidden;
   scroll-snap-type: y mandatory; 
 }
 
@@ -30,4 +31,8 @@ section {
   min-height: 100vh;
   width: 90%;
   margin: auto;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
