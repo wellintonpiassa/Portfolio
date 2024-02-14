@@ -1,5 +1,9 @@
 /* Customizações do header */
 
+#header {
+  z-index: 2;
+}
+
 #header .menu-link {
   padding-bottom: 10px;
 }
