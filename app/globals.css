@@ -4,9 +4,30 @@
 
 :root {
   --baseColor: #444444;
+  --secondColor: #C4C8C5;
+  --bkgGrayPath: url('../public/assets/bkg-gray.jpg');
+  --bkgDarkPath: url('../public/assets/bkg-dark.jpg');
+}
+
+
+html {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory; 
 }
 
 body {
-  background-image: url('../public/assets/bkg-gray.jpg');
-  background-repeat: repeat-x;
+  background: var(--bkgGrayPath) repeat;
+  color: var(--baseColor);
+}
+
+section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+.container {
+  min-height: 100vh;
+  width: 90%;
+  margin: auto;
 }
