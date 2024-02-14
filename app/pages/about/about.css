@@ -1,0 +1,20 @@
+
+#about h1 {
+  font-size: 60px;
+  font-weight: bold;
+  border-bottom: 1px solid transparent;
+  margin-bottom: 80px;
+}
+
+#about .profile {
+  display: flex;
+}
+
+#about .profile p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+#about .profile img {
+  border-radius: 50%;
+}
