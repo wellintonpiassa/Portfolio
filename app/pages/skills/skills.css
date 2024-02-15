@@ -1,0 +1,42 @@
+#skills h1 {
+  transform: rotate(-90deg);
+  font-size: 60px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#skills .wrapper {
+  margin-left: -7%;
+  padding-top: 2%;
+}
+
+#skills .card {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  padding: 45px 20px;
+  background-color: #fff;
+}
+
+#skills .card ul {
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  gap: 35px 50px;
+}
+
+#skills .card ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#skills .card ul li span {
+  padding-top: 5px;
+  font-weight: 500;
+  text-align: center;
+}
+
+#skills .card ul li.disabled {
+  filter: grayscale(1) blur(1.5px);
+}
