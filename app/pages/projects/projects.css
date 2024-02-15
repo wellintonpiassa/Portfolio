@@ -1,0 +1,60 @@
+#projects h1 {
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+
+#projects .card {
+  border-radius: 0;
+  border: 1px solid var(--baseColor);
+  background-color: #fff;
+}
+
+#projects .card img {
+  width: 100%;
+}
+
+#projects .card h2 {
+  font-weight: bold;
+  padding: 20px;
+  font-size: 23px;
+}
+
+#projects .card p {
+  font-size: 15px;
+  padding: 0 20px 20px 20px;
+}
+
+#projects .slick-slide {
+  padding: 20px;
+}
+
+#projects .slick-slide:not(.slick-center) .card {
+  filter: blur(9px);
+}
+
+#projects .slick-arrow {
+  background-image: url('../../../public/icons/arrow.svg');
+}
+
+#projects .slick-arrow::before {
+  content: none;
+}
+
+#projects .slick-prev,
+#projects .slick-next {
+  z-index: 2;
+  width: 30px;
+  height: 30px;
+  top: 57%;
+}
+
+#projects .slick-prev {
+  left: 30%;
+  transform: rotate(270deg);
+}
+
+#projects .slick-next {
+  right: 30%;
+  transform: rotate(90deg);
+}
