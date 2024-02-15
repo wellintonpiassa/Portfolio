@@ -1,8 +1,5 @@
 #skills h1 {
   transform: rotate(-90deg);
-  font-size: 60px;
-  font-weight: bold;
-  display: flex;
   align-items: center;
   justify-content: center;
 }

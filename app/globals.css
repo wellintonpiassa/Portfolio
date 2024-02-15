@@ -38,3 +38,9 @@ section {
 ::-webkit-scrollbar {
   display: none;
 }
+
+h1 {
+  font-size: 60px;
+  font-weight: bold;
+  display: flex;
+}
