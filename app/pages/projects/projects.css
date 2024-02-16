@@ -31,6 +31,8 @@
 
 #projects .slick-slide:not(.slick-center) .card {
   filter: blur(9px);
+  opacity: 0.5;
+  transition-duration: .7s;
 }
 
 #projects .slick-arrow {
