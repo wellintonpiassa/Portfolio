@@ -17,7 +17,7 @@ import {
   LinuxOriginal,
   BashOriginal,
   DockerOriginal,
-  AngularOriginal
+  ReactOriginal
 } from 'devicons-react';
 
 export default function Skills() {
@@ -53,12 +53,20 @@ export default function Skills() {
                   <span>jQuery</span>
                 </li>
                 <li>
+                  <ReactOriginal size={80}/>
+                  <span>React JS</span>
+                </li>
+                <li>
                   <COriginal size={80}/>
                   <span>C</span>
                 </li>
                 <li>
                   <JavaOriginal size={80}/>
                   <span>Java</span>
+                </li>
+                <li>
+                  <JavascriptOriginal size={80}/>
+                  <span>Javascript</span>
                 </li>
                 <li>
                   <PythonOriginal size={80}/>
@@ -68,10 +76,7 @@ export default function Skills() {
                   <PhpOriginal size={80}/>
                   <span>PHP</span>
                 </li>
-                <li>
-                  <JavascriptOriginal size={80}/>
-                  <span>Javascript</span>
-                </li>
+                
                 <li>
                   <MysqlOriginal size={80}/>
                   <span>MySQL</span>
@@ -87,11 +92,6 @@ export default function Skills() {
                 <li>
                   <LinuxOriginal size={80}/>
                   <span>Linux</span>
-                </li>
-                <li className='disabled'>
-                  <AngularOriginal size={80}/>
-                  <span>Angular</span>
-                  <span>Aprendizado em andamento</span>
                 </li>
                 <li className='disabled'>
                   <DockerOriginal size={80} />
