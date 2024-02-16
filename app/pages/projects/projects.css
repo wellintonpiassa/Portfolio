@@ -8,10 +8,13 @@
   border-radius: 0;
   border: 1px solid var(--baseColor);
   background-color: #fff;
+  max-width: 450px;
 }
 
 #projects .card img {
   width: 100%;
+  height: auto;
+  max-height: 250px;
 }
 
 #projects .card h2 {
@@ -27,6 +30,8 @@
 
 #projects .slick-slide {
   padding: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 #projects .slick-slide:not(.slick-center) .card {

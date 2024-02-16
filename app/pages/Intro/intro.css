@@ -18,3 +18,7 @@
 #intro .social-media {
   margin-top: 20px;
 }
+
+#intro .social-media li {
+  padding: 0 10px;
+}

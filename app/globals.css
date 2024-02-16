@@ -1,7 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "bootstrap/dist/css/bootstrap.min.css";
 
+/* Variables */
 :root {
   --baseColor: #444444;
   --secondColor: #C4C8C5;
@@ -9,6 +8,10 @@
   --bkgDarkPath: url('../public/assets/bkg-dark.jpg');
 }
 
+/* default customs */
+* {
+  color: var(--baseColor);
+}
 
 html {
   scroll-behavior: smooth;
@@ -19,7 +22,6 @@ html {
 
 body {
   background: var(--bkgGrayPath) repeat;
-  color: var(--baseColor);
 }
 
 section {
@@ -27,10 +29,30 @@ section {
   scroll-snap-stop: always;
 }
 
-.container {
-  min-height: 100vh;
-  width: 90%;
-  margin: auto;
+h1 {
+  font-size: 60px;
+  font-weight: bold;
+  display: flex;
+  text-shadow: 3px 2px 3px rgba(0, 0, 0, 0.25);
+}
+
+a {
+  text-decoration: none;
+  color: var(--baseColor);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* generic elements */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100dvh;
   padding-bottom: 5%;
   position: relative;
 }
@@ -39,8 +61,15 @@ section {
   display: none;
 }
 
-h1 {
-  font-size: 60px;
-  font-weight: bold;
-  display: flex;
+/* Container custom */
+@media (min-width: 768px) {
+  .container {
+    max-width: 85%;
+  }
+}
+
+@media(max-width: 767px) {
+  .container {
+    max-width: 90%;
+  }
 }

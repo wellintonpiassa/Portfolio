@@ -2,8 +2,8 @@ import './header.css';
 
 export default function Header() {
   return (
-    <div id="header" className="h-20 w-11/12 flex justify-end items-center fixed">
-      <ul className="flex gap-10">
+    <div id="header" className="container-fluid d-flex justify-content-end align-items-center fixed-top">
+      <ul className="d-flex gap-5 pe-5">
         <li><a className='menu-link' href="#intro">Home</a></li>
         <li><a className='menu-link' href="#about">Sobre</a></li>
         <li><a className='menu-link' href="#skills">Habilidades</a></li>

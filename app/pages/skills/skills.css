@@ -1,12 +1,11 @@
 #skills h1 {
   transform: rotate(-90deg);
-  align-items: center;
-  justify-content: center;
+  height: fit-content;
 }
 
-#skills .wrapper {
-  margin-left: -7%;
-  padding-top: 2%;
+#skills .float-title {
+  left: 0;
+  top: 40%;
 }
 
 #skills .card {
