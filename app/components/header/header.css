@@ -14,3 +14,16 @@
   border-bottom: 1px solid var(--baseColor);
   transition-duration: .5s;
 }
+
+.dark .menu-link {
+  color: var(--secondColor);
+}
+
+.dark .menu-link:hover,
+.dark .menu-link:active {
+  border-bottom: 1px solid var(--secondColor) !important;
+}
+
+.light .menu-link {
+  color: var(--baseColor);
+}
