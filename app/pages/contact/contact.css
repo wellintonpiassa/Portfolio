@@ -2,3 +2,35 @@
   background: var(--bkgDarkPath) repeat;
   color: var(--secondColor);
 }
+
+#contact p,
+#contact h1,
+#contact span {
+  color: var(--secondColor);
+}
+
+#contact p,
+#contact h1 {
+  text-shadow: 3px 2px 3px rgba(255, 255, 255, 0.25);
+}
+
+#contact .form-group {
+  margin-bottom: 10px;
+}
+
+#contact .form-group input {
+  margin-bottom: 5px;
+}
+
+#contact .form-group input,
+#contact .form-group textarea {
+  border-color: var(--secondColor);
+  background-color: transparent;
+  color: var(--secondColor);
+}
+
+#contact .form-group label,
+#contact .form-group textarea {
+  color: var(--secondColor);
+  margin-bottom: 10px;
+}
