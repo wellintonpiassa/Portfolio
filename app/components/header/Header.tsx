@@ -9,10 +9,6 @@ export default function Header() {
   const router = useRouter();
   const params = useParams();
 
-  function pushToPage (link:string) {
-    router.push(link);
-  }
-
   useEffect(() => {
     const darkPages = ['#contact'];
     var currHash = window.document.location.hash;
@@ -22,11 +18,11 @@ export default function Header() {
   return (
     <div id="header" className={`container-fluid d-flex justify-content-end align-items-center fixed-top ${theme}`}>
       <ul className="d-flex gap-5 pe-5">
-        <li><a className='menu-link' onClick={() => pushToPage('#intro')}>Home</a></li>
-        <li><a className='menu-link' onClick={() => pushToPage('#about')}>Sobre</a></li>
-        <li><a className='menu-link' onClick={() => pushToPage('#skills')}>Habilidades</a></li>
-        <li><a className='menu-link' onClick={() => pushToPage('#projects')}>Projetos</a></li>
-        <li><a className='menu-link' onClick={() => pushToPage('#contact')}>Contato</a></li>
+        <li><a className='menu-link' onClick={() => router.push('#intro')}>Home</a></li>
+        <li><a className='menu-link' onClick={() => router.push('#about')}>Sobre</a></li>
+        <li><a className='menu-link' onClick={() => router.push('#skills')}>Habilidades</a></li>
+        <li><a className='menu-link' onClick={() => router.push('#projects')}>Projetos</a></li>
+        <li><a className='menu-link' onClick={() => router.push('#contact')}>Contato</a></li>
       </ul>
     </div>
   )
