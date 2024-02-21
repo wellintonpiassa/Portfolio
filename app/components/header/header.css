@@ -7,6 +7,7 @@
 
 #header .menu-link {
   padding-bottom: 10px;
+  cursor: pointer;
 }
 
 #header .menu-link:hover,
