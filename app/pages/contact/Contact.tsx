@@ -31,12 +31,14 @@ export default function Contact() {
   
   const form = useRef(null)
   const [feedback, setFeedback] = useState('')
+  const [disableState, setDisableState] = useState(false)
   
   async function sendEmail() {
     if (form.current != null) {
       emailjs.sendForm('service_zvbyxtu', 'template_hwvgcp3', form.current, 'iQxI2VbqGqDxowJRd')
         .then(response => {
           setFeedback("Muito obrigado pelo contato! Sua mensagem foi enviada com sucesso e em breve entrarei em contato.")
+          setDisableState(true)
         })
         .catch(error => {
           console.error(error);
@@ -91,7 +93,7 @@ export default function Contact() {
                       />
                       {errors.message && <span>{errors.message.message}</span>}
                     </div>
-                    <button className='btn btn-success' type='submit'>Entrar em contato</button>
+                    <button className={`btn btn-success`} disabled={disableState} type='submit'>Entrar em contato</button>
                     {feedback != '' && <span>{feedback}</span>}
                 </form>
               </div>
