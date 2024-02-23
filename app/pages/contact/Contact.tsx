@@ -6,6 +6,7 @@ import './contact.css'
 import { useState, useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import { Fade } from 'react-awesome-reveal'
+import { CircleSpinnerOverlay, FerrisWheelSpinner } from 'react-spinner-overlay'
 
 const createMessageSchema = z.object({
   name: z.string()
@@ -32,23 +33,32 @@ export default function Contact() {
   const form = useRef(null)
   const [feedback, setFeedback] = useState('')
   const [disableState, setDisableState] = useState(false)
+  const [loading, setLoading] = useState<boolean>(false)
   
   async function sendEmail() {
     if (form.current != null) {
+      setLoading(true)
       emailjs.sendForm('service_zvbyxtu', 'template_hwvgcp3', form.current, 'iQxI2VbqGqDxowJRd')
         .then(response => {
           setFeedback("Muito obrigado pelo contato! Sua mensagem foi enviada com sucesso e em breve entrarei em contato.")
           setDisableState(true)
+          setLoading(false)
         })
         .catch(error => {
           console.error(error);
           setFeedback("Falha ao enviar mensagem, por favor tente novamente mais tarde.")
+          setLoading(false)
         });
     }
   }
   
   return (
     <section id="contact">
+      <CircleSpinnerOverlay
+        loading={loading} 
+        overlayColor="rgba(68, 68, 68, 0.8)"
+        color='var(--secondColor)'
+      />
       <div className='container'>
         <div className='wrapper'>
           <Fade
