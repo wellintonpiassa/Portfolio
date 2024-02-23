@@ -13,7 +13,7 @@ export default function Header() {
     const darkPages = ['#contact'];
     var currHash = window.document.location.hash;
     (darkPages.includes(currHash)) ? setTheme('dark') : setTheme('light')
-  }, []);
+  });
 
   return (
     <div id="header" className={`container-fluid d-flex justify-content-end align-items-center fixed-top ${theme}`}>
