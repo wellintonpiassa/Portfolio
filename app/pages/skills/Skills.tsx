@@ -17,7 +17,11 @@ import {
   LinuxOriginal,
   BashOriginal,
   DockerOriginal,
-  ReactOriginal
+  ReactOriginal,
+  NextjsOriginal,
+  TypescriptOriginal,
+  PostgresqlOriginal,
+  LaravelOriginal
 } from 'devicons-react';
 
 export default function Skills() {
@@ -54,8 +58,8 @@ export default function Skills() {
                     <span>jQuery</span>
                   </li>
                   <li>
-                    <ReactOriginal size={80}/>
-                    <span>React JS</span>
+                    <NextjsOriginal size={80}/>
+                    <span>Next JS</span>
                   </li>
                   <li>
                     <COriginal size={80}/>
@@ -70,6 +74,10 @@ export default function Skills() {
                     <span>Javascript</span>
                   </li>
                   <li>
+                    <TypescriptOriginal size={80}/>
+                    <span>TypeScript</span>
+                  </li>
+                  <li>
                     <PythonOriginal size={80}/>
                     <span>Python</span>
                   </li>
@@ -77,10 +85,13 @@ export default function Skills() {
                     <PhpOriginal size={80}/>
                     <span>PHP</span>
                   </li>
-                  
                   <li>
                     <MysqlOriginal size={80}/>
                     <span>MySQL</span>
+                  </li>
+                  <li>
+                    <PostgresqlOriginal size={80}/>
+                    <span>PostgreSQL</span>
                   </li>
                   <li>
                     <BashOriginal size={80}/>
@@ -97,6 +108,16 @@ export default function Skills() {
                   <li className='disabled'>
                     <DockerOriginal size={80} />
                     <span>Docker</span>
+                    <span>Aprendizado em andamento</span>
+                  </li>
+                  <li className='disabled'>
+                    <LaravelOriginal size={80}/>
+                    <span>Laravel</span>
+                    <span>Aprendizado em andamento</span>
+                  </li>
+                  <li className='disabled'>
+                    <ReactOriginal size={80}/>
+                    <span>React Native</span>
                     <span>Aprendizado em andamento</span>
                   </li>
                 </ul>
