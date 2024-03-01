@@ -3,6 +3,10 @@
   color: var(--secondColor);
 }
 
+#contact .wrapper {
+  padding-bottom: 0;
+}
+
 #contact p,
 #contact h1,
 #contact span {

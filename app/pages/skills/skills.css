@@ -1,3 +1,7 @@
+#skills .wrapper {
+  padding-bottom: 0;
+}
+
 #skills h1 {
   transform: rotate(-90deg);
   height: fit-content;
