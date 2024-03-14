@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { Fade, Slide } from 'react-awesome-reveal';
 import { motion } from 'framer-motion';
 
-export default function About() {
+export default function About(props: any) {
   return (
     <motion.section id="about"
       initial={{y:'100%'}}
@@ -44,7 +44,7 @@ export default function About() {
                 </div>
             </Fade>
           </div>
-          <Arrow link={"#skills"}/>
+          <Arrow pageId={2} action={props.handlePageChange}/>
         </div>
       </div>
     </motion.section>

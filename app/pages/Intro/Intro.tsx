@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Arrow from '@/app/components/arrow/Arrow';
 import { Fade } from 'react-awesome-reveal';
 
-export default function Intro() {  
+export default function Intro(props:any) {  
   return (
     <section id="intro">
         <div className='container'>
@@ -88,7 +88,7 @@ export default function Intro() {
               delay={3500}>
               <a className='cv-button' download={true} href="assets/files/CV.pdf">Download Currículo</a>
             </Fade>
-            <Arrow delay={4000} link={'#about'}/>
+            <Arrow delay={4000} pageId={1} action={props.handlePageChange}/>
           </div>
         </div>
     </section>

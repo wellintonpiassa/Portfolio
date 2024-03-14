@@ -7,7 +7,7 @@ import Image from 'next/image';
 import { Fade } from 'react-awesome-reveal';
 import Arrow from '@/app/components/arrow/Arrow';
 
-export default function Projects() {
+export default function Projects(props: any) {
   const settings = {
     className: "center",
     centerMode: true,
@@ -85,7 +85,7 @@ export default function Projects() {
             </Fade>
 
           </div>
-          <Arrow link={"#contact"}/>
+          <Arrow pageId={4} action={props.handlePageChange}/>
         </div>
       </div>
     </section>

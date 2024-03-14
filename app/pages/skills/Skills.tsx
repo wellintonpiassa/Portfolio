@@ -24,7 +24,7 @@ import {
   LaravelOriginal
 } from 'devicons-react';
 
-export default function Skills() {
+export default function Skills(props: any) {
   return (
     <section id="skills">
       <div className='container'>
@@ -124,7 +124,7 @@ export default function Skills() {
               </div>
             </Fade>
           </div>
-          <Arrow link={"#projects"}></Arrow>
+          <Arrow pageId={3} action={props.handlePageChange}></Arrow>
         </div>
       </div>
     </section>

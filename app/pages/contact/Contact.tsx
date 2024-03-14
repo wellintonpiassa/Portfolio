@@ -6,7 +6,8 @@ import './contact.css'
 import { useState, useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import { Fade } from 'react-awesome-reveal'
-import { CircleSpinnerOverlay, FerrisWheelSpinner } from 'react-spinner-overlay'
+import { CircleSpinnerOverlay } from 'react-spinner-overlay'
+import Footer from '@/app/components/footer/Footer'
 
 const createMessageSchema = z.object({
   name: z.string()
@@ -109,6 +110,7 @@ export default function Contact() {
               </div>
             </div>
           </Fade>
+        <Footer></Footer>
         </div>
       </div>
     </section>

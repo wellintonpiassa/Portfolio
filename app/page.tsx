@@ -52,11 +52,11 @@ export default function Home() {
         pageOnChange={handlePageChange}
         customPageNumber={currPage}
       >
-        <Intro></Intro>
-        <About></About>
-        <Skills></Skills>
-        <Projects></Projects>
-        <Contact></Contact>
+        <Intro handlePageChange={handlePageChange}/>
+        <About handlePageChange={handlePageChange}/>
+        <Skills handlePageChange={handlePageChange}/>
+        <Projects handlePageChange={handlePageChange}/>
+        <Contact handlePageChange={handlePageChange}/>
       </ReactPageScroller>
     </main>
   );
