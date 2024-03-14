@@ -1,29 +1,22 @@
 'use client'
+import { ReactNode } from 'react';
 import './header.css';
-import { useEffect, useState } from 'react';
-import { useParams, useRouter } from 'next/navigation';
+import { motion } from 'framer-motion';
 
-export default function Header() {
+interface Props {
+  children: ReactNode
+}
 
-  const [theme, setTheme] = useState('')
-  const router = useRouter();
-  const params = useParams();
-
-  useEffect(() => {
-    const darkPages = ['#contact'];
-    var currHash = window.document.location.hash;
-    (darkPages.includes(currHash)) ? setTheme('dark') : setTheme('light')
-  });
-
+export default function Header(props: Readonly<Props>) {
   return (
-    <div id="header" className={`container-fluid d-flex justify-content-end align-items-center fixed-top ${theme}`}>
-      <ul className="d-flex gap-5 pe-5">
-        <li><a className='menu-link' onClick={() => router.push('#intro')}>Home</a></li>
-        <li><a className='menu-link' onClick={() => router.push('#about')}>Sobre</a></li>
-        <li><a className='menu-link' onClick={() => router.push('#skills')}>Habilidades</a></li>
-        <li><a className='menu-link' onClick={() => router.push('#projects')}>Projetos</a></li>
-        <li><a className='menu-link' onClick={() => router.push('#contact')}>Contato</a></li>
-      </ul>
-    </div>
+    <motion.nav 
+      id="header" 
+      className={`container-fluid d-flex justify-content-end align-items-center fixed-top`} 
+      initial={{opacity: 0}}
+      animate={{ opacity: 1 }}
+      transition={{ ease: "easeOut", duration: 2 }} 
+      >
+      {props.children}
+    </motion.nav>
   )
 }

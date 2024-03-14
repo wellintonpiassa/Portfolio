@@ -14,10 +14,7 @@
 }
 
 html {
-  scroll-behavior: smooth;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  scroll-snap-type: y mandatory; 
+  overflow: hidden;
 }
 
 body {

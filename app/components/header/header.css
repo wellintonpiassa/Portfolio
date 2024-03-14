@@ -8,6 +8,8 @@
 #header .menu-link {
   padding-bottom: 10px;
   cursor: pointer;
+  border: none;
+  background-color: transparent;
 }
 
 #header .menu-link:hover,

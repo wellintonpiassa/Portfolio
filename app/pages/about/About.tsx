@@ -1,12 +1,17 @@
 'use client'
 import './about.css'
 import Arrow from '@/app/components/arrow/Arrow'
-import Image from 'next/image'
-import { Fade, Slide } from "react-awesome-reveal"
+import Image from 'next/image';
+import { Fade, Slide } from 'react-awesome-reveal';
+import { motion } from 'framer-motion';
 
 export default function About() {
   return (
-    <section id="about">
+    <motion.section id="about"
+      initial={{y:'100%'}}
+      animate={{y:'0%'}}
+      transition={{duration:0.75, ease: 'easeOut'}}
+    >
       <div className='container'>
         <div className='wrapper'>
           <Slide
@@ -42,6 +47,6 @@ export default function About() {
           <Arrow link={"#skills"}/>
         </div>
       </div>
-    </section>
+    </motion.section>
   )
 }
