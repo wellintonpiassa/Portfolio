@@ -35,7 +35,11 @@ export default function Home() {
         {pagesInfo.map((page) => {
           return (
             <li key={page.id}>
-              <button className={"menu-link " + (currPage == page.id ? 'active' : '')} onClick={() => handlePageChange(page.id)}>{page.name}</button>
+              <button 
+                className={"menu-link " + (currPage == page.id ? 'active' : '')} 
+                onClick={() => handlePageChange(page.id)}>
+                {page.name}
+              </button>
             </li>
           )
         })}
