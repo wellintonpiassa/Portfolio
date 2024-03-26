@@ -33,3 +33,12 @@
   color: var(--secondColor);
   margin-bottom: 10px;
 }
+
+#contact .arrow {
+  left: auto;
+  bottom: 90px;
+  right: 0;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}

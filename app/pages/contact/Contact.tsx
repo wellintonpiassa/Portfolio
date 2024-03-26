@@ -8,6 +8,7 @@ import emailjs from '@emailjs/browser'
 import { Fade } from 'react-awesome-reveal'
 import { CircleSpinnerOverlay } from 'react-spinner-overlay'
 import Footer from '@/app/components/footer/Footer'
+import Arrow from '@/app/components/arrow/Arrow'
 
 const createMessageSchema = z.object({
   name: z.string()
@@ -26,7 +27,7 @@ const createMessageSchema = z.object({
 
 type createMessageFormDate = z.infer<typeof createMessageSchema>
 
-export default function Contact() {
+export default function Contact(props: any) {
   const { register, handleSubmit, formState: {errors} } = useForm<createMessageFormDate>({
     resolver: zodResolver(createMessageSchema)
   })
@@ -110,7 +111,14 @@ export default function Contact() {
               </div>
             </div>
           </Fade>
-        <Footer></Footer>
+          <Arrow 
+            direction='up' 
+            delay={0} 
+            pageId={0} 
+            action={props.handlePageChange} 
+            color='white' 
+            legend="Voltar para o inicio"/>
+          <Footer></Footer>
         </div>
       </div>
     </section>

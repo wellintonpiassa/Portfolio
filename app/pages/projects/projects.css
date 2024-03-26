@@ -41,7 +41,7 @@
 }
 
 #projects .slick-arrow {
-  background-image: url('../../../public/icons/arrow.svg');
+  background-image: url('../../../public/icons/arrow-black.svg');
 }
 
 #projects .slick-arrow::before {

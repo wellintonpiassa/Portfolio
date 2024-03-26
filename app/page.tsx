@@ -60,7 +60,7 @@ export default function Home() {
         <About handlePageChange={handlePageChange}/>
         <Skills handlePageChange={handlePageChange}/>
         <Projects handlePageChange={handlePageChange}/>
-        <Contact/>
+        <Contact handlePageChange={handlePageChange}/>
       </ReactPageScroller>
     </main>
   );
