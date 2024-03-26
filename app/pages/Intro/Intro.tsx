@@ -86,7 +86,7 @@ export default function Intro(props:any) {
             <Fade 
               triggerOnce={true}
               delay={3500}>
-              <a className='cv-button' download={true} href="assets/files/CV.pdf">Download Currículo</a>
+              <a className='cv-button' download={true} href="assets/files/CV-Wellinton-Piassa.pdf">Download Currículo</a>
             </Fade>
             <Arrow delay={4000} pageId={1} action={props.handlePageChange}/>
           </div>
