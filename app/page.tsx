@@ -31,7 +31,7 @@ export default function Home() {
 
   const pagesElements = () => {
     return (
-      <ul className="d-flex gap-5 pe-5">
+      <ul className={"d-flex gap-5 pe-5 " + (currPage == 4 ? 'dark' : '')}>
         {pagesInfo.map((page) => {
           return (
             <li key={page.id}>

@@ -23,13 +23,15 @@
 
 .dark .menu-link {
   color: var(--secondColor);
+  transition-duration: .5s;
 }
 
 .dark .menu-link:hover,
-.dark .menu-link:active {
+.dark .menu-link.active {
   border-bottom: 1px solid var(--secondColor) !important;
+  transition-duration: .5s;
 }
 
-.light .menu-link {
+#header .light {
   color: var(--baseColor);
 }
