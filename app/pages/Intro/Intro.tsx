@@ -4,8 +4,16 @@ import Typewriter from 'typewriter-effect';
 import Image from 'next/image';
 import Arrow from '@/app/components/arrow/Arrow';
 import { Fade } from 'react-awesome-reveal';
+import Slider from "react-slick";
 
-export default function Intro(props:any) {  
+export default function Intro(props:any) { 
+  const settings = {
+    vertical: true,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    infinite: true,
+    slidesToShow: 1,
+  }; 
   return (
     <section id="intro">
         <div className='container'>
@@ -34,18 +42,32 @@ export default function Intro(props:any) {
                     .start();
                 }}
               />
-              <Typewriter
-                options={{
-                  cursor: ""
-                }}
-                onInit={(typewriter) => {
-                  typewriter
-                    .pauseFor(2000)
-                    .changeDelay(50)
-                    .typeString('Desenvolvedor Web')
-                    .start();
-                }}
-              />
+              <Slider {...settings}>
+                <Typewriter
+                  options={{
+                    cursor: ""
+                  }}
+                  onInit={(typewriter) => {
+                    typewriter
+                      .pauseFor(2000)
+                      .changeDelay(50)
+                      .typeString('Desenvolvedor Web')
+                      .start();
+                  }}
+                />
+                <Typewriter
+                  options={{
+                    cursor: ""
+                  }}
+                  onInit={(typewriter) => {
+                    typewriter
+                      .pauseFor(2000)
+                      .changeDelay(50)
+                      .typeString('Dev Full Stack')
+                      .start();
+                  }}
+                />
+              </Slider>
             </div>
             <Fade 
               triggerOnce={true}
