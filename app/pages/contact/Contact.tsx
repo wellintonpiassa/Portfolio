@@ -79,7 +79,8 @@ export default function Contact(props: any) {
                     <div className='form-group'>
                       <label htmlFor="name">Nome</label>
                       <input 
-                        className='form-control' 
+                        className='form-control'
+                        placeholder='Digite seu nome aqui' 
                         type="text" 
                         {...register('name')}
                       />
@@ -88,7 +89,8 @@ export default function Contact(props: any) {
                     <div className='form-group'>
                       <label htmlFor="email">Email</label>
                       <input 
-                        className='form-control' 
+                        className='form-control'
+                        placeholder='Digite seu email aqui'
                         type="email" 
                         {...register('email')}
                       />
@@ -98,6 +100,7 @@ export default function Contact(props: any) {
                       <label htmlFor="message">Mensagem</label>
                       <textarea 
                         id="message" 
+                        placeholder='Digite sua mensagem aqui'
                         cols={30} 
                         rows={10}
                         className='form-control'

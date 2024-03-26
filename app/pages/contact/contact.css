@@ -23,10 +23,23 @@
 
 #contact .form-group input,
 #contact .form-group textarea {
-  border-color: var(--secondColor);
+  border: none;
+  border-radius: 0;
   background-color: transparent;
   color: var(--secondColor);
+  border-bottom: 1px solid var(--secondColor);
 }
+
+#contact .form-group input::placeholder,
+#contact .form-group textarea::placeholder {
+  color: var(--secondColor);
+  opacity: 0.3;
+}
+
+#contact .form-group input:focus ,
+#contact .form-group textarea:focus {
+  box-shadow: none;
+} 
 
 #contact .form-group label,
 #contact .form-group textarea {
