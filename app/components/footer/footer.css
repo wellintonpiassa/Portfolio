@@ -1,0 +1,23 @@
+footer {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--secondColor);
+  margin-top: 50px;
+  color: var(--secondColor);
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 10px 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
