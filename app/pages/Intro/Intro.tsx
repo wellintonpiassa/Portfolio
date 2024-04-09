@@ -9,6 +9,7 @@ import Slider from "react-slick";
 export default function Intro(props:any) { 
   const settings = {
     vertical: true,
+    Arrow: false,
     autoplay: true,
     autoplaySpeed: 4000,
     infinite: true,

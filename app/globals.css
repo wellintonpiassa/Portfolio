@@ -65,6 +65,21 @@ ul {
   }
 }
 
+@media(max-width: 992px) {
+  html {
+    overflow-y: scroll;
+  }
+  section {
+    margin-bottom: 60px;
+  }
+  h1 {
+    font-size: 2.5rem !important;
+  }
+  body {
+    height: 0;
+  }
+}
+
 @media(max-width: 767px) {
   .container {
     max-width: 90%;

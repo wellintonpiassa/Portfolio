@@ -35,3 +35,9 @@
 #header .light {
   color: var(--baseColor);
 }
+
+@media (max-width: 992px) {
+  #header {
+    display: none !important;
+  }
+}

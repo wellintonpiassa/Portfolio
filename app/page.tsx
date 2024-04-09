@@ -11,6 +11,7 @@ import { useState } from "react";
 export default function Home() {
 
   const [currPage, setCurrPage] = useState(0);
+  const windowSize = window.innerWidth
 
   const handlePageChange = (pageNumber: number) => {
     setCurrPage(pageNumber);
@@ -52,16 +53,28 @@ export default function Home() {
       <Header>
         {pagesElements()}
       </Header>
-      <ReactPageScroller
-        pageOnChange={handlePageChange}
-        customPageNumber={currPage}
-      >
+      {windowSize > 992 ?
+        <ReactPageScroller
+          pageOnChange={handlePageChange}
+          customPageNumber={currPage}
+          blockScrollDown={currPage == 1 && windowSize < 992}
+          blockScrollUp={currPage == 1 && windowSize < 992}
+        >
+          <Intro handlePageChange={handlePageChange}/>
+          <About handlePageChange={handlePageChange}/>
+          <Skills handlePageChange={handlePageChange}/>
+          <Projects handlePageChange={handlePageChange}/>
+          <Contact handlePageChange={handlePageChange}/>
+        </ReactPageScroller>
+      :
+      <div>
         <Intro handlePageChange={handlePageChange}/>
         <About handlePageChange={handlePageChange}/>
         <Skills handlePageChange={handlePageChange}/>
         <Projects handlePageChange={handlePageChange}/>
         <Contact handlePageChange={handlePageChange}/>
-      </ReactPageScroller>
+      </div>
+      }
     </main>
   );
 }

@@ -29,19 +29,19 @@ export default function Skills(props: any) {
     <section id="skills">
       <div className='container'>
         <div className='wrapper'>
-          <div className='d-flex justify-content-center'>
+          <div className='d-flex flex-column flex-lg-row justify-content-center'>
             <Slide
-              className='position-absolute float-title'
+              className='float-title'
               triggerOnce={true}>
                 <h1>Habilidades</h1>
             </Slide>
             <Fade
-            className='col-8'
+            className='col-12 col-lg-8'
             triggerOnce={true}
             delay={500}>
               <div className='card'>
                 <ul>
-                  <Fade cascade damping={0.1} direction='up' >
+                  <Fade cascade damping={0.1} direction='up' triggerOnce={true}>
                     <li>
                       <Html5Original size={80}/>
                       <span>HTML</span>

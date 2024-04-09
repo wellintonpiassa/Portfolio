@@ -14,8 +14,18 @@ export default function Projects(props: any) {
     infinite: true,
     centerPadding: '0',
     slidesToShow: 3,
-    speed: 600
+    speed: 600,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   };
+  
   return (
     <section id="projects">
       <div className='container'>

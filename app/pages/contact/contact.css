@@ -55,3 +55,23 @@
   gap: 10px;
   align-items: center;
 }
+
+@media(max-width: 991px) {
+  #contact .container {
+    padding-top: 50px;
+  }
+  #contact footer {
+    position: relative;
+    flex-direction: column-reverse;
+    gap: 15px;
+    height: 90px;
+    margin-top: 0;
+    border: none;
+  }
+  #contact form {
+    margin-bottom: 30px;
+  }
+  #contact .arrow {
+    display: none !important;
+  }
+}

@@ -65,3 +65,17 @@
   right: 30%;
   transform: rotate(90deg);
 }
+
+@media (max-width: 991px) {
+  #projects .arrow {
+    display: none !important;
+  }
+
+  #projects .slick-next {
+    right: -20px;
+  }
+  
+  #projects .slick-prev {
+    left: -20px;
+  }
+}
