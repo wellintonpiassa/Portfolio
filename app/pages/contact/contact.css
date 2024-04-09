@@ -60,6 +60,7 @@
   #contact .container {
     padding-top: 50px;
   }
+
   #contact footer {
     position: relative;
     flex-direction: column-reverse;
@@ -68,9 +69,11 @@
     margin-top: 0;
     border: none;
   }
+
   #contact form {
     margin-bottom: 30px;
   }
+  
   #contact .arrow {
     display: none !important;
   }
