@@ -56,7 +56,13 @@
   align-items: center;
 }
 
-@media(max-width: 991px) {
+@media (max-width: 1199px) {
+  #contact .arrow {
+    display: none !important;
+  }
+}
+
+@media (max-width: 991px) {
   #contact .container {
     padding-top: 50px;
   }
@@ -72,9 +78,5 @@
 
   #contact form {
     margin-bottom: 30px;
-  }
-  
-  #contact .arrow {
-    display: none !important;
   }
 }

@@ -16,9 +16,13 @@
 
 #about .profile img {
   border-radius: 50%;
-  max-width: 100%;
+  max-width: 250px;
+  max-height: 250px;
 }
 
+#about .about-box {
+  overflow: scroll;
+}
 
 @media (max-width: 991px) {
   #about .wrapper {
@@ -39,8 +43,6 @@
 
   #about .profile img {
     margin: 0 auto;
-    max-width: 250px;
-    max-height: 250px;
   }
 
   #about .profile p {

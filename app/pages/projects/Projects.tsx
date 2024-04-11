@@ -17,6 +17,13 @@ export default function Projects(props: any) {
     speed: 600,
     responsive: [
       {
+        breakpoint: 1400,
+        settings: {
+          slidesToShow: 1,
+          centerPadding: '30%'
+        }
+      },
+      {
         breakpoint: 992,
         settings: {
           slidesToShow: 1,

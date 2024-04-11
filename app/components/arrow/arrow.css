@@ -8,14 +8,18 @@
   border: none;
 }
 
+.up {
+  transform: translate(-50px, 0) rotate(0deg) !important;
+}
+
 .down {
-  transform: rotate(180deg);
+  transform: translate(-50px, 0) rotate(180deg) !important;
 }
 
 .left {
-  transform: rotate(270deg);
+  transform: translate(-50px, 0) rotate(270deg) !important;
 }
 
 .right {
-  transform: rotate(90deg);
+  transform: translate(-50px, 0) rotate(90deg) !important;
 }

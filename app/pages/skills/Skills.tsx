@@ -36,7 +36,7 @@ export default function Skills(props: any) {
                 <h1>Habilidades</h1>
             </Slide>
             <Fade
-            className='col-12 col-lg-8'
+            className='col-12 col-lg-10 col-xl-8'
             triggerOnce={true}
             delay={500}>
               <div className='card'>

@@ -33,7 +33,7 @@ export default function About(props: any) {
               />
             </Fade>
             <Fade
-              className='col-12 col-lg-7'
+              className='col-12 col-lg-7 offset-lg-2 col-xl-8 offset-xl-1 offset-xxl-0'
               triggerOnce={true}
               delay={1000}>
                 <div className='about-box' style={{maxHeight: maxHeightDescription}}>
