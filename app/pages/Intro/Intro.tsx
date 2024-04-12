@@ -15,6 +15,7 @@ export default function Intro(props:any) {
     infinite: true,
     slidesToShow: 1,
   }; 
+  
   return (
     <section id="intro">
         <div className='container'>

@@ -4,10 +4,20 @@ import Arrow from '@/app/components/arrow/Arrow'
 import Image from 'next/image';
 import { Fade, Slide } from 'react-awesome-reveal';
 import { motion } from 'framer-motion';
+import { useEffect, useState } from 'react';
+
 
 export default function About(props: any) {
-  const maxHeightDescription = window.innerHeight - 400
-  
+
+  const [maxHeightDescription, setMaxHeightDescription] = useState<number>();
+
+  useEffect(() => {
+    setMaxHeightDescription(window.innerHeight - 400);
+    window.addEventListener("resize", () => {
+      setMaxHeightDescription(window.innerHeight - 400);
+    });
+  }, []);
+
   return (
     <motion.section id="about"
       initial={{y:'100%'}}
@@ -42,6 +52,9 @@ export default function About(props: any) {
                   </p>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ipsum urna, imperdiet a sapien quis, pretium commodo velit. Phasellus ac risus vel nisi lobortis laoreet non in magna. Vestibulum sollicitudin volutpat tempor. Sed tempor 
+                  </p>
+                  <p>
+                    Integer ultricies libero et ante ullamcorper suscipit. Suspendisse lorem dui, posuere sed odio sit amet, tempor molestie est. Morbi quis massa eu odio suscipit dapibus. Aliquam sollicitudin orci et sollicitudin tristique. Integer sollicitudin tincidunt magna, nec efficitur elit interdum ac. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus porta, felis nec cursus lobortis, metus turpis iaculis dui, quis posuere nisi nunc ut justo. Donec sed orci semper, scelerisque metus non, mattis nibh. Sed tempus vulputate felis, ac suscipit nunc viverra et. Aliquam vel nisi fermentum, finibus erat id, vestibulum nulla. Vivamus eget nulla eget elit cursus tristique non at leo. Aliquam mollis nibh neque, in consectetur nisi viverra in.
                   </p>
                   <p>
                     Integer ultricies libero et ante ullamcorper suscipit. Suspendisse lorem dui, posuere sed odio sit amet, tempor molestie est. Morbi quis massa eu odio suscipit dapibus. Aliquam sollicitudin orci et sollicitudin tristique. Integer sollicitudin tincidunt magna, nec efficitur elit interdum ac. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus porta, felis nec cursus lobortis, metus turpis iaculis dui, quis posuere nisi nunc ut justo. Donec sed orci semper, scelerisque metus non, mattis nibh. Sed tempus vulputate felis, ac suscipit nunc viverra et. Aliquam vel nisi fermentum, finibus erat id, vestibulum nulla. Vivamus eget nulla eget elit cursus tristique non at leo. Aliquam mollis nibh neque, in consectetur nisi viverra in.
