@@ -5,6 +5,8 @@ import Image from 'next/image';
 import Arrow from '@/app/components/arrow/Arrow';
 import { Fade } from 'react-awesome-reveal';
 import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function Intro(props:any) { 
   const settings = {
@@ -53,7 +55,7 @@ export default function Intro(props:any) {
                     typewriter
                       .pauseFor(2000)
                       .changeDelay(50)
-                      .typeString('Desenvolvedor Web')
+                      .typeString('Dev Full Stack')
                       .start();
                   }}
                 />
@@ -65,7 +67,7 @@ export default function Intro(props:any) {
                     typewriter
                       .pauseFor(2000)
                       .changeDelay(50)
-                      .typeString('Dev Full Stack')
+                      .typeString('Desenvolvedor Web')
                       .start();
                   }}
                 />
