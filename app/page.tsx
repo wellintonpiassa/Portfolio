@@ -3,7 +3,6 @@ import Intro from "./pages/Intro/Intro";
 import About from "./pages/about/About";
 import Contact from "./pages/contact/Contact";
 import Header from "./components/header/Header";
-import Projects from "./pages/projects/Projects";
 import Skills from "./pages/skills/Skills";
 import ReactPageScroller from "react-page-scroller";
 import { useEffect, useState } from "react";
@@ -33,13 +32,12 @@ export default function Home() {
     { id: 0, name: "Home" },
     { id: 1, name: "Sobre" },
     { id: 2, name: "Habilidades" },
-    { id: 3, name: "Projetos" },
-    { id: 4, name: "Contato" }
+    { id: 3, name: "Contato" }
   ]
 
   const pagesElements = () => {
     return (
-      <ul className={"d-flex gap-5 pe-5 " + (currPage == 4 ? 'dark' : '')}>
+      <ul className={"d-flex gap-5 pe-5 " + (currPage == 3 ? 'dark' : '')}>
         {pagesInfo.map((page) => {
           return (
             <li key={page.id}>
@@ -68,7 +66,6 @@ export default function Home() {
           <Intro handlePageChange={handlePageChange}/>
           <About handlePageChange={handlePageChange}/>
           <Skills handlePageChange={handlePageChange}/>
-          <Projects handlePageChange={handlePageChange}/>
           <Contact handlePageChange={handlePageChange}/>
         </ReactPageScroller>
       :
@@ -76,7 +73,6 @@ export default function Home() {
         <Intro handlePageChange={handlePageChange}/>
         <About handlePageChange={handlePageChange}/>
         <Skills handlePageChange={handlePageChange}/>
-        <Projects handlePageChange={handlePageChange}/>
         <Contact handlePageChange={handlePageChange}/>
       </div>
       }
