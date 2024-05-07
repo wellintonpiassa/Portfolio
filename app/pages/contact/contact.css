@@ -33,7 +33,7 @@
 #contact .form-group input::placeholder,
 #contact .form-group textarea::placeholder {
   color: var(--secondColor);
-  opacity: 0.3;
+  opacity: 0.7;
 }
 
 #contact .form-group input:focus ,

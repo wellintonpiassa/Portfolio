@@ -21,7 +21,8 @@ import {
   NextjsOriginal,
   TypescriptOriginal,
   PostgresqlOriginal,
-  LaravelOriginal
+  NodejsOriginalWordmark,
+  VuejsPlainWordmark
 } from 'devicons-react';
 
 export default function Skills(props: any) {
@@ -55,12 +56,28 @@ export default function Skills(props: any) {
                       <span>Bootstrap</span>
                     </li>
                     <li>
+                      <JavascriptOriginal size={80}/>
+                      <span>Javascript</span>
+                    </li>
+                    <li>
+                      <TypescriptOriginal size={80}/>
+                      <span>TypeScript</span>
+                    </li>
+                    <li>
                       <JqueryOriginal size={80}/>
                       <span>jQuery</span>
                     </li>
                     <li>
+                      <VuejsPlainWordmark size={80}/>
+                      <span>Vue</span>
+                    </li>
+                    <li>
                       <NextjsOriginal size={80}/>
-                      <span>Next JS</span>
+                      <span>Next</span>
+                    </li>
+                    <li>
+                      <NodejsOriginalWordmark size={80}/>
+                      <span>Node</span>
                     </li>
                     <li>
                       <COriginal size={80}/>
@@ -69,14 +86,6 @@ export default function Skills(props: any) {
                     <li>
                       <JavaOriginal size={80}/>
                       <span>Java</span>
-                    </li>
-                    <li>
-                      <JavascriptOriginal size={80}/>
-                      <span>Javascript</span>
-                    </li>
-                    <li>
-                      <TypescriptOriginal size={80}/>
-                      <span>TypeScript</span>
                     </li>
                     <li>
                       <PythonOriginal size={80}/>
@@ -107,18 +116,13 @@ export default function Skills(props: any) {
                       <span>Linux</span>
                     </li>
                     <li className='disabled'>
-                      <DockerOriginal size={80} />
-                      <span>Docker</span>
-                      <span>Aprendizado em andamento</span>
-                    </li>
-                    <li className='disabled'>
-                      <LaravelOriginal size={80}/>
-                      <span>Laravel</span>
-                      <span>Aprendizado em andamento</span>
-                    </li>
-                    <li className='disabled'>
                       <ReactOriginal size={80}/>
                       <span>React Native</span>
+                      <span>Aprendizado em andamento</span>
+                    </li>
+                    <li className='disabled'>
+                      <DockerOriginal size={80} />
+                      <span>Docker</span>
                       <span>Aprendizado em andamento</span>
                     </li>
                   </Fade>

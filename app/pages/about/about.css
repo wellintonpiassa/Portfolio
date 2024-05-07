@@ -5,6 +5,10 @@
   margin-bottom: 80px;
 }
 
+#about .wrapper {
+  padding-bottom: 10%;
+}
+
 #about .profile {
   display: flex;
 }

@@ -10,6 +10,7 @@ import { useEffect, useState } from 'react';
 export default function About(props: any) {
 
   const [maxHeightDescription, setMaxHeightDescription] = useState<number>();
+  const yearsWork = new Date().getFullYear() - 2021;  
 
   useEffect(() => {
     setMaxHeightDescription(window.innerHeight - 400);
@@ -46,18 +47,13 @@ export default function About(props: any) {
               className='col-12 col-lg-7 offset-lg-2 col-xl-8 offset-xl-1 offset-xxl-0'
               triggerOnce={true}
               delay={1000}>
-                <div className='about-box' style={{maxHeight: maxHeightDescription}}>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ipsum urna, imperdiet a sapien quis, pretium commodo velit. Phasellus ac risus vel nisi lobortis laoreet non in magna. Vestibulum sollicitudin volutpat tempor. Sed tempor tincidunt enim vel fringilla. Ut sed dui vitae leo euismod euismod viverra eu justo. Suspendisse potenti. Praesent ut ante justo. Integer in dolor magna. Vestibulum vel auctor purus, quis venenatis magna. Maecenas tincidunt libero commodo elit accumsan dictum. Praesent pellentesque sem quis massa facilisis, quis commodo purus euismod. Sed sollicitudin, orci malesuada pharetra blandit, nibh diam luctus diam
+                <div className='about-box' style={{maxHeight: maxHeightDescription, overflowY: 'visible'}}>
+                  <p className='about-text'>
+                    Graduado em Ciência da Computação pela Universidade Estadual de Londrina (2019-2023) e atuando na área {yearsWork} anos.
+                    Iniciei minha carreira profissional em 2021, durante a minha gradução, onde ingressei como estagiário de Desenvolvimento Web, trabalhando como programador na área de e-commerce. Ao final da graduação em 2023, comecei a atuar como Desenvolvedor Full Stack Jr. na mesma empresa.
                   </p>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ipsum urna, imperdiet a sapien quis, pretium commodo velit. Phasellus ac risus vel nisi lobortis laoreet non in magna. Vestibulum sollicitudin volutpat tempor. Sed tempor 
-                  </p>
-                  <p>
-                    Integer ultricies libero et ante ullamcorper suscipit. Suspendisse lorem dui, posuere sed odio sit amet, tempor molestie est. Morbi quis massa eu odio suscipit dapibus. Aliquam sollicitudin orci et sollicitudin tristique. Integer sollicitudin tincidunt magna, nec efficitur elit interdum ac. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus porta, felis nec cursus lobortis, metus turpis iaculis dui, quis posuere nisi nunc ut justo. Donec sed orci semper, scelerisque metus non, mattis nibh. Sed tempus vulputate felis, ac suscipit nunc viverra et. Aliquam vel nisi fermentum, finibus erat id, vestibulum nulla. Vivamus eget nulla eget elit cursus tristique non at leo. Aliquam mollis nibh neque, in consectetur nisi viverra in.
-                  </p>
-                  <p>
-                    Integer ultricies libero et ante ullamcorper suscipit. Suspendisse lorem dui, posuere sed odio sit amet, tempor molestie est. Morbi quis massa eu odio suscipit dapibus. Aliquam sollicitudin orci et sollicitudin tristique. Integer sollicitudin tincidunt magna, nec efficitur elit interdum ac. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus porta, felis nec cursus lobortis, metus turpis iaculis dui, quis posuere nisi nunc ut justo. Donec sed orci semper, scelerisque metus non, mattis nibh. Sed tempus vulputate felis, ac suscipit nunc viverra et. Aliquam vel nisi fermentum, finibus erat id, vestibulum nulla. Vivamus eget nulla eget elit cursus tristique non at leo. Aliquam mollis nibh neque, in consectetur nisi viverra in.
+                  <p className='about-text'>
+                    Hoje sou Desenvolvedor Full Stack Pleno, trabalhando com Node e VueJs voltado a integrações entre sistemas envolvendo e-commerces, ERPs, marketplaces, drop shipping e cross docking. Além disso, estou aberto para desenvolver projetos como freelancer, caso tenha interesse, tenha alguma dúvida ou queira saber mais, pode entrar em contato comigo pela página de contato.
                   </p>
                 </div>
             </Fade>

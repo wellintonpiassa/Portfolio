@@ -55,7 +55,19 @@ export default function Intro(props:any) {
                     typewriter
                       .pauseFor(2000)
                       .changeDelay(50)
-                      .typeString('Dev Full Stack')
+                      .typeString('Desenvolvedor Full Stack')
+                      .start();
+                  }}
+                />
+                <Typewriter
+                  options={{
+                    cursor: ""
+                  }}
+                  onInit={(typewriter) => {
+                    typewriter
+                      .pauseFor(2000)
+                      .changeDelay(80)
+                      .typeString('Graduado em Ciência da Computação')
                       .start();
                   }}
                 />
@@ -67,7 +79,7 @@ export default function Intro(props:any) {
                     typewriter
                       .pauseFor(2000)
                       .changeDelay(50)
-                      .typeString('Desenvolvedor Web')
+                      .typeString('Freelancer')
                       .start();
                   }}
                 />
