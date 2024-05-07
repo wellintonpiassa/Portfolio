@@ -7,6 +7,7 @@ import Skills from "./pages/skills/Skills";
 import ReactPageScroller from "react-page-scroller";
 import { useEffect, useState } from "react";
 
+
 export default function Home() {
 
   const [currPage, setCurrPage] = useState(0);
@@ -22,6 +23,8 @@ export default function Home() {
   const handlePageChange = (pageNumber: number) => {
     setCurrPage(pageNumber);
   }
+
+  const handleScrollUnavailable = () => {}
 
   interface PageInfo {
     id: number,
@@ -60,11 +63,12 @@ export default function Home() {
       </Header>
       {windowSize && windowSize > 992 ?
         <ReactPageScroller
-          pageOnChange={handlePageChange}
           customPageNumber={currPage}
+          pageOnChange={handlePageChange}
+          handleScrollUnavailable={handleScrollUnavailable}
         >
           <Intro handlePageChange={handlePageChange}/>
-          <About handlePageChange={handlePageChange}/>
+          <About handlePageChange={handlePageChange}/ >
           <Skills handlePageChange={handlePageChange}/>
           <Contact handlePageChange={handlePageChange}/>
         </ReactPageScroller>
