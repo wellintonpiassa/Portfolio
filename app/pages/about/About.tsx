@@ -37,7 +37,7 @@ export default function About(props: any) {
               triggerOnce={true}
               delay={1000}>
               <Image
-                src="/assets/profile.jpg"
+                src="/assets/profile.png"
                 width={300}
                 height={300}
                 alt="Foto de perfil"
