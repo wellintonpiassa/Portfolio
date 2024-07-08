@@ -53,7 +53,7 @@ export default function About(props: any) {
                     Iniciei minha carreira profissional em 2021, durante a minha gradução, onde ingressei como estagiário de Desenvolvimento Web, trabalhando como programador na área de e-commerce. Ao final da graduação em 2023, comecei a atuar como Desenvolvedor Full Stack Jr. na mesma empresa.
                   </p>
                   <p className='about-text'>
-                    Hoje sou Desenvolvedor Full Stack Pleno, trabalhando com Node e VueJs voltado a integrações entre sistemas envolvendo e-commerces, ERPs, marketplaces, drop shipping e cross docking. Além disso, estou aberto para desenvolver projetos como freelancer, caso tenha interesse, tenha alguma dúvida ou queira saber mais, pode entrar em contato comigo pela página de contato.
+                    Hoje sou Desenvolvedor Full Stack Pleno, trabalhando com Node e VueJs voltado a integrações entre sistemas envolvendo e-commerces e ERPs. Além disso, estou aberto para desenvolver projetos como freelancer, caso tenha interesse, tenha alguma dúvida ou queira saber mais, pode entrar em contato comigo pela página de contato.
                   </p>
                 </div>
             </Fade>
